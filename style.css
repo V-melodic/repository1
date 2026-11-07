@@ -7,25 +7,27 @@
 }
 
  .heros{
-    width:100vw ;
     height: 100vh;
     background-image: url(img/zeta.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
     margin-top: 90px;
 }
 
-.nadpis1{
+.hero-txt{
     text-align: center;
-    transition: all 0.67s;
+    position: relative;
+    top: 40%;
 }
 
 .container{
     display: flex;
 }
 
-.rdirect{
-    flex-direction: row;
+.cdirect{
+    flex-direction: column;
 }
 
 .cent{
@@ -34,6 +36,8 @@
 
 h1:hover{
     transform: scale(1.25);
+    transition: all;
+    transition-duration: 0.65s;
 }
 
 *{
