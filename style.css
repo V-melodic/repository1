@@ -1,25 +1,62 @@
-.navpan{
+*{
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font: tahoma, sans-serif, bold;
+}
+
+:root{
+    --bc:#DFF3E3;
+}
+
+header {
     text-align: center;
     background-color:#4B0082;
     height: 90px;
-    position: fixed;
+    position: sticky;
+    top: 0px;
+    left: 0px;
     width: 100vw;
 }
 
  .heros{
     height: 100vh;
+    width: 100vw;
     background-image: url(img/zeta.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    margin-top: 90px;
+    position: static;
+}
+
+h1{
+    text-align: center;
+    position: static;
+    transition: all;
+    transition-duration: 0.65s;
+    margin: 10px;
 }
 
 .hero-txt{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 30px;
+}
+
+.hero-txt button {
+    border: solid;
+    border-radius: 25px;
+    border-color: black;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: white;
+    background-color: #4B0082;
     text-align: center;
-    position: relative;
-    top: 40%;
+    cursor: pointer;
 }
 
 .container{
@@ -31,15 +68,75 @@
 }
 
 .cent{
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-h1:hover{
+.zvetseni :hover{
     transform: scale(1.25);
+}
+
+p, h1, h2, button{
     transition: all;
     transition-duration: 0.65s;
 }
 
-*{
-    margin: 0%;
+.schedule{
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bc);
+}
+
+.tabulka{
+    text-align: center;
+    height: 50vh;
+    width: 80vw;
+    color: black;
+    background-color: var(--bc);
+}
+
+td  {
+    border: 3px;
+    border-style: solid;
+    color: black;
+}
+
+.tema{
+    height: 40vh;
+    width: 100vw;
+    background-color: var(--bc);
+    padding-top: 30px;
+    text-align: center;
+}
+
+.tema2{
+    text-align: center;
+    padding-top: 40px;
+    
+}
+
+input{
+    width: 98%;
+    height: 80%;
+    background-color: var(--bc);
+    border: 2px;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.nadpismensi{
+    font-size: 40px;
+}
+
+.padd{
+    padding-bottom: 30px;
+}
+
+.temporary{
+    transition: all;
+    transition-duration: 0.65s;
 }
