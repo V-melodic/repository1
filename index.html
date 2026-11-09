@@ -2,40 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>MHD</title>
     <link rel="stylesheet"; href="style.css">
-  </head>
+  </head><!-- martin souhlasil s pouziti jeho jmena pro tento assignment -->
   <body>
-       <header></header>
+       <header>
+           <div class="zvetseni">
+           <h1 class="navpanleft">MHD</h1>
+           </div>
+           <div class="rdirectright">
+               <a href="#uvod" class="navpanright">ÚVOD</a>
+               <a href="#tema" class="navpanright">TÉMA</a>
+               <a href="#zapis" class="navpanright">ZÁPIS</a>
+               <a href="#temapred" class="navpanright">PŘEDEŠLÁ TÉMATA</a>
+               <a href="#proc" class="navpanright">PROČ SE ZAPSAT</a>
+           </div>
+       </header>
     <main class="container cdirect">
     <!-- hero section -->
       <section class="heros cdirect">
-          <div class="hero-txt cdirect zvetseni">
-            <h1>Martinovo Hromadné doučování</h1>
-            <p class="zvetseni">Hromadné doučování WWW a Robotiky od Martina Válka</p>
-            <button class="zvetseni">Zapište se zde</button>
+          <div class="hero-txt cdirect zvetseni" id="uvod">
+            <h1>Martinovo Hromadné Doučování</h1>
+            <p class="zvetseni">Hromadné doučování WWW, Robotiky a Matematiky od Martina Válka</p>
+            <button class="zvetseni"><a href="#zapis" class="colo">Zapište Se Zde</a></button>
           </div>
       </section>
       <!-- tema section -->
-      <section class="tema">
+      <section class="tema" id="tema">
         <div class="zvetseni">
-        <h1 class="nadpismensi zvetseni">Téma Doučování</h1>
+        <h1 class="nadpismensi padd">Téma Doučování</h1>
         </div>
-            <div class="tema 2">
-                <div class="tema2 zvetseni">
+            <div class="tema 2 rdirect">
+                <div class="tema2 zvetseni temamensi backg">
                     <h2>24.11</h2>
-                    <p>-WWW-<br>hero-image, flexbox, animace, relativní adresace</>
-                </div>
-                <div class="tema2 zvetseni">
+                    <p>-WWW-<br>Hero-image, Flexbox, Animace, Relativní adresace<br>11:55-12:40--Kinosál</d>
+                    <br>
+                    <br>
                     <h2>26.11</h2>
-                    <p>-Robotika-<br>Vývojové diagramy-proměnné, větvení, cykly,<br>pole</p>
+                    <p>-Robotika-<br>Vývojové diagramy-Proměnné, Větvení, Cykly,<br>Pole<br>12:50-13:35--Ró</p>
+                </div>
+                <div class="tema2 zvetseni temamensi backg">
+                    <h2>1.12</h2>
+                    <p>-Matematika-<br>Intervaly, Mocniny<br>11:55-12:40--Kinosál</p>
+                    <br>
+                    <br>
+                    <h2>3.12</h2>
+                    <p>-WWW,Robotika,Matematika-<br>Revize Předchozích Hodin(otevřené téma)<br>12:50-13:35--Ró</p>
                 </div>
             </div>
       </section>
       <!-- schedule section -->
-      <section class="schedule cdirect">
+      <section class="schedule cdirect" id="zapis">
         <div class="zvetseni">
-        <h1 class="nadpismensi padd">Zapište se zde</h1>
+        <h1 class="nadpismensi padd"">Zapište Se Zde</h1>
         </div>
           <table class="tabulka">
               <tr>
@@ -72,7 +91,7 @@
               </tr>
               <tr>
                   <td><input type="text"></td>
-                  <td><input type="text"></td>
+                  <td id="temapred"><input type="text"></td>
               </tr>
               <tr>
                   <td><input type="text"></td>
@@ -80,8 +99,49 @@
               </tr>
           </table>
       </section>
-      <!--  -->
+      <!-- probrane temata section -->
+      <section class="tema3">
+          <div class="zvetseni">
+          <h1 class="nadpismensi padd">Témata Předešlých Hodin</h1>
+          </div>
+              <div class="tema 2 rdirect">
+                  <div class="tema2 zvetseni temamensi backg">
+                      <h2>22.10</h2>
+                      <p>-WWW-<br>Positioning, Box-sizing, Flexbox, Box-shadow<br>11:55-12:40--Kinosál</p>
+                      <br>
+                      <br>
+                      <h2>27.10</h2>
+                      <p>-Robotika-<br>Vývojové diagramy-Proměnné, Větvení, Cykly, Pole<br>12:50-13:35--Ró</p>
+                  </div>
+                  <div class="tema2 zvetseni temamensi backg">
+                      <h2>3.11</h2>
+                      <p>-Matematika-<br>Intervaly, Mocniny<br>11:55-12:40--Kinosál</p>
+                      <br>
+                      <br>
+                      <br>
+                      <h2>5.11</h2>
+                      <p>-WWW,Robotika,Matematika-<br>Doučování Intr(otevřené téma)<br>19:30-20:30--Místnost 23</p>
+                  </div>
+              </div>
+      </section>
+      <!--  proc section -->
+      <section class="schedule rdirect" id="proc"">
+          <div class="zvetseni">
+          <h1 class="nadpismensi padd">Proč Se Zapsat?</h1>
+          </div>
+          <div class="tema2 zvetseni temamensi backginv">
+              <h2>1.</h2>
+              <p>Je to zdarma. Přímo ve škole<br> nebo na Intru.</p>
+              <br>
+              <br>
+              <br>
+              <h2>2.</h2>
+              <p>Tři oblasti-WWW,Robotika a Matematika<br>Otevřenost s tématy-s čím máte problém<br>s tím přijďte</p>
+          </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>&copyVítek Maloušek</p>
+    </footer>
   </body>
 </html>

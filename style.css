@@ -1,31 +1,80 @@
 *{
     margin: 0px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font: tahoma, sans-serif, bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    font: Impact, sans-serif, bold;
 }
 
 :root{
-    --bc:#DFF3E3;
+    --bc:#D7F9FF;
+}
+
+body{
+    width: 100vw;
 }
 
 header {
     text-align: center;
-    background-color:#4B0082;
+    background-color:#0E0F19;
     height: 90px;
     position: sticky;
     top: 0px;
     left: 0px;
     width: 100vw;
+    z-index: 100000000000000000;
+    border-style: solid;
+    border-top: 15px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #FE5F55;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navpanleft{
+    padding-top: 20px;
+    text-align: left;
+    margin-left: 50px;
+    width: 200px;
+    color: ghostwhite;
+}
+
+.navpanright{
+    margin-top: -30px;
+    text-align: right;
+    margin-right: 20px;
+    text-decoration: none;
+    color: ghostwhite;
+    position: relative;
+}
+
+.navpanright:hover::after {
+  transform: scaleX(1);
+}
+
+.navpanright::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
 
  .heros{
     height: 100vh;
-    width: 100vw;
     background-image: url(img/zeta.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: static;
+    animation: move 2s ease;
 }
 
 h1{
@@ -33,12 +82,10 @@ h1{
     position: static;
     transition: all;
     transition-duration: 0.65s;
-    margin: 10px;
 }
 
 .hero-txt{
     height: 100vh;
-    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,7 +101,7 @@ h1{
     display: inline-block;
     padding: 10px 25px;
     color: white;
-    background-color: #4B0082;
+    background-color: #0E0F19;
     text-align: center;
     cursor: pointer;
 }
@@ -83,8 +130,7 @@ p, h1, h2, button{
 }
 
 .schedule{
-    height: 70vh;
-    width: 100vw;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,6 +143,7 @@ p, h1, h2, button{
     width: 80vw;
     color: black;
     background-color: var(--bc);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 td  {
@@ -106,17 +153,16 @@ td  {
 }
 
 .tema{
-    height: 40vh;
-    width: 100vw;
-    background-color: var(--bc);
+    height: 80vh;
+    background-color:#817E9F;
     padding-top: 30px;
     text-align: center;
+    color: ghostwhite;
 }
 
 .tema2{
     text-align: center;
     padding-top: 40px;
-    
 }
 
 input{
@@ -130,13 +176,93 @@ input{
 
 .nadpismensi{
     font-size: 40px;
+    width: w;
+}
+
+h2{
+    text-align: center;
 }
 
 .padd{
     padding-bottom: 30px;
 }
 
-.temporary{
-    transition: all;
-    transition-duration: 0.65s;
+.probtema{
+    height: 60vh;
+    background-color: var(--bc);
+    padding-top: 30px;
+    text-align: center;
+}
+
+.temamensi{
+    width: 40vw;
+}
+
+.rdirectright{
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+}
+
+.rdirect{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.nadpisflx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+  min-height: 90px;
+  background: #0E0F19;
+  color: ghostwhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: px;
+}
+
+@keyframes move {
+  from {transform: translateX(-2000px);opacity: 0;}
+  to {transform: translateX(0);opacity: 1;}
+}
+
+.colo{
+    color: ghostwhite;
+    text-decoration: none;
+}
+
+.tema3{
+    height: 80vh;
+    background-color:#817E9F;
+    padding-top: 30px;
+    text-align: center;
+    color: ghostwhite;
+}
+
+.backg{
+    height: 320px;
+    background-color: #0E0F19;
+    border: solid;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+a{
+    max-width: 200px;
+}
+
+.backginv{
+    height: 320px;
+    background-color: #0E0F19;
+    border: solid;
+    border-radius: 30px;
+    color: ghostwhite;
+    border-color: #0E0F19 ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
