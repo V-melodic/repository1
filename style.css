@@ -1,18 +1,93 @@
 *{
     margin: 0px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font: Impact, sans-serif, bold;
 }
 
 body{
     width: 100vw;
 }
-
  .heros{
     height: 100vh;
-    background-image: url(img/bg1.png);
+    width: 100vw;
+    background-image: url('vid/backg.gif');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: static;
+}
+
+.herocontent{
+    font-family: 'BBH Bartle';
+    color: rgb(22, 3, 40);
+    text-align: center;
+    padding-top: 30vh;
+    font-size: 48px;
+}
+
+.page-selector{
+    height: 100vh;
+    background-color:#FFEFD5;
+}
+
+.left{
+    justify-content: left;
+    width: 70vw;
+    display: flex;
+}
+
+.right{
+    justify-content: right;
+    width: 70vw;
+    display: flex;
+}
+
+.nadpis{
+    font-family: 'BBH Bartle';
+    color: rgb(22, 3, 40);
+    text-align: center;
+    padding-top: 10vh;
+    font-size: 48px;
+}
+
+.nadpis3{
+    font-family: 'BBH Bartle';
+    color: rgb(22, 3, 40);
+    padding-top: 15vh;
+    margin-left: 20vw;
+    font-size: 24px;
+}
+
+.nadpis2{
+    font-family: 'BBH Bartle';
+    color: rgb(22, 3, 40);
+    text-align: left;
+    padding-top: 10vh;
+    padding-left: 3vw;
+    font-size: 24px;
+    width: 30vw;
+}
+
+.img1{
+    width: 200px;
+    height: 200px;
+    margin-top: 4vh;
+    margin-left: 3vw;;
+}
+
+.border{
+    border-radius: 15%;
+    border: 5px solid rgb(22, 3, 40)
+}
+
+.text{
+    font-family: 'BBH Bogle';
+    color: rgb(22, 3, 40);
+    font-size: 18px;
+    margin-top: 4vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.listina{
+    font-family: 'BBH Bogle';
+    width: 30vw;
 }
