@@ -1,0 +1,65 @@
+/*barvy: největší:#010736 #0D1C42 #22396F nejmenší: FCF1D0
+https://colorhunt.co/palette/0107360d1c4222396ffcf1d0
+*/
+
+* { 
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    position: sticky;
+    left: 0px;
+    top: 0px;
+    color: #FCF1D0;
+    width: 100vw;
+    height: 5vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(15, 15, 35);
+    z-index: 10;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 95vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0b0e14;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(0.7); /* Darkens image so glowing particles pop */
+}
+
+#particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none; /* Lets clicks pass through to buttons */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  color: #ffffff;
+  text-align: center;
+}
