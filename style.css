@@ -5,6 +5,21 @@
 body{
     width: 100vw;
 }
+
+header {
+    text-align: center;
+    font: BBH bartle;
+    background-color:black;
+    opacity: 80%;
+    border-radius: 20px;
+    height: 90px;
+    position: sticky;
+    top: 8px;
+    left: 25vw;
+    width: 50vw;
+    z-index: 100000000000000000;
+}
+
  .heros{
     height: 100vh;
     width: 100vw;
@@ -23,26 +38,63 @@ body{
     font-size: 48px;
 }
 
-.page-selector{
-    height: 100vh;
+.discograpgy1{
+    margin-top: -90px;
+    height: 135vh;
     background-color:#FFEFD5;
+    color:#2E294E ;
+}
+
+.discograpgy1delsi{
+    height: 135vh;
+    background-color:#FFEFD5;
+    color:#2E294E ;
+}
+
+.discograpgy1delsi2{
+    height: 145vh;
+    background-color:#FFEFD5;
+    color:#2E294E ;
+}
+
+.discograpgy1kratsi{
+    height: 115vh;
+    background-color:#FFEFD5;
+    color:#2E294E ;
+}
+
+.discograpgy2{
+    height: 110vh;
+    background-color:#2E294E;
+    color: #FFEFD5;
+}
+
+.discograpgy2delsi{
+    height: 130vh;
+    background-color:#2E294E;
+    color: #FFEFD5;
+}
+
+.discograpgy2delsi2{
+    height: 175vh;
+    background-color:#2E294E;
+    color: #FFEFD5;
+}
+
+.discograpgy2delsi3{
+    height: 155vh;
+    background-color:#2E294E;
+    color: #FFEFD5;
 }
 
 .left{
     justify-content: left;
-    width: 70vw;
-    display: flex;
-}
-
-.right{
-    justify-content: right;
-    width: 70vw;
+    width: 100vw;
     display: flex;
 }
 
 .nadpis{
     font-family: 'BBH Bartle';
-    color: rgb(22, 3, 40);
     text-align: center;
     padding-top: 10vh;
     font-size: 48px;
@@ -50,7 +102,6 @@ body{
 
 .nadpis3{
     font-family: 'BBH Bartle';
-    color: rgb(22, 3, 40);
     padding-top: 15vh;
     margin-left: 20vw;
     font-size: 24px;
@@ -58,7 +109,6 @@ body{
 
 .nadpis2{
     font-family: 'BBH Bartle';
-    color: rgb(22, 3, 40);
     text-align: left;
     padding-top: 10vh;
     padding-left: 3vw;
@@ -73,21 +123,50 @@ body{
     margin-left: 3vw;;
 }
 
-.border{
+.img2{
+    width: 200px;
+    height: 200px;
+    margin-top: 4vh;
+    margin-right: 3vw;;
+}
+
+.borderdark{
     border-radius: 15%;
     border: 5px solid rgb(22, 3, 40)
 }
 
+.borderlight{
+    border-radius: 15%;
+    border: 5px solid #FFEFD5
+}
+
 .text{
-    font-family: 'BBH Bogle';
-    color: rgb(22, 3, 40);
-    font-size: 18px;
+    font-family: 'bebas neue';
+    font-size: 21px;
     margin-top: 4vh;
     margin-left: 3vw;
     margin-right: 3vw;
 }
 
 .listina{
-    font-family: 'BBH Bogle';
+    font-family: 'bebas neue';
     width: 30vw;
+}
+
+.padd{
+    margin-right: 20vh;
+}
+
+footer {
+  min-height: 90px;
+  background: #0E0F19;
+  color: ghostwhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: px;
+}
+
+.padd2{
+    padding-top: 120px;
 }
